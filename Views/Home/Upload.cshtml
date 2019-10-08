@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebCore.Models.Patient>
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h2>@ViewData["Title"]</h2>
+
+<td>Select File : </td>
+<td>
+    <asp:FileUpload ID="FileUpload1" runat="server" />
+</td>
+
+<input id="Import" type="button" value="Upload" Text="Import Data to Database" OnClick="Upload />
+<p>Use this page to detail your site's privacy policy.</p>
